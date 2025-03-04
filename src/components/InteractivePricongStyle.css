@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Manrope:600,800&display=swap');
+
+body{
+    font-family: 'Manrope', sans-serif !important;
+}
+
+/*Background*/
+.cs-bg-image {
+    background: url('../images/bg-pattern.svg') no-repeat center top / 100% 50%;
+}
+
+.cs-bg-logo {
+    background: url('../images/pattern-circles.svg') no-repeat center center / auto 100%;
+}
+
+/*Font*/
+.cs-fw-800 {
+    font-weight: 800 !important;
+}
+
+.cs-fc-dark-blue {
+    color: hsl(227, 35%, 25%) !important;
+}
+
+.cs-fc-grey-blue {
+    color: hsl(225, 20%, 60%) !important;
+}
