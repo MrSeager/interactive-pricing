@@ -4,6 +4,14 @@ body{
     font-family: 'Manrope', sans-serif !important;
 }
 
+.cs-w {
+    width: 750px !important;
+}
+
+.cs-transition {
+    transition: .5s !important;
+}
+
 /*Background*/
 .cs-bg-image {
     background: url('../images/bg-pattern.svg') no-repeat center top / 100% 50%;
@@ -24,4 +32,42 @@ body{
 
 .cs-fc-grey-blue {
     color: hsl(225, 20%, 60%) !important;
+}
+
+.cs-ls {
+    letter-spacing: 3px !important;
+}
+
+/*Range*/
+.cs-range {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to right, hsl(174, 86%, 45%) 0%, hsl(174, 86%, 45%) var(--value), hsl(224, 65%, 95%) var(--value), hsl(224, 65%, 95%) 100%);
+    border-radius: 5px;
+    outline: none;
+    transition: background 450ms ease-in;
+}
+
+.cs-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid hsl(174, 86%, 45%);
+    cursor: pointer;
+}
+
+.cs-range::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid hsl(174, 86%, 45%);
+    cursor: pointer;
+}
+
+.cs-range:hover {
+    opacity: 50%;
 }
