@@ -71,3 +71,19 @@ body{
 .cs-range:hover {
     opacity: 50%;
 }
+
+/*Badge*/
+.badge.cs-badge {
+    background-color: hsl(14, 92%, 95%) !important;
+    color: hsl(15, 100%, 70%) !important;
+}
+
+/*Buttons*/
+.cs-btn {
+    background-color: hsl(227, 35%, 25%) !important;
+    color: hsl(223, 50%, 87%) !important;
+}
+
+.cs-btn:hover {
+    color: hsl(230, 100%, 99%) !important;
+}
