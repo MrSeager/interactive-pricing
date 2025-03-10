@@ -46,7 +46,7 @@ const InteractivePricongPage: FC = () => {
                     <Col xs={6} className='d-flex flex-row align-items-center'>
                         <h2 className='h6 cs-ls text-uppercase cs-fc-grey-blue'>{pageViews} pageviews</h2>
                     </Col>
-                    <Col xs={6} className='d-flex flex-row align-items-center justify-content-center'>
+                    <Col xs={6} className='d-flex flex-row align-items-center justify-content-end'>
                         <h2 className='h1 cs-fw-800 cs-fc-dark-blue'>${!yearlyPlan ? price : price - (price / 4)}.00</h2>
                         <h3 className='ms-2 h5 cs-fc-grey-blue'>/ monthly</h3>
                     </Col>
@@ -67,12 +67,12 @@ const InteractivePricongPage: FC = () => {
                         <h4 className='h6'>Monthly Billing</h4>
                     </Col>
                     <Col xs={2} className='d-flex flex-column align-items-center justify-content-center'>
-                        <Form.Check // prettier-ignore
+                        <Form.Check
                             type="switch"
                             id="custom-switch"
                             checked={yearlyPlan}
                             onChange={handleSwitchChange}
-                            className=''
+                            className='pb-2'
                         />
                     </Col>
                     <Col xs={5} className='d-flex flex-row align-items-center justify-content-start gap-2'>
