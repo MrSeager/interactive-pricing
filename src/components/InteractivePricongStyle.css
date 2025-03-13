@@ -52,12 +52,14 @@ body{
 
 .cs-range::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 25px;
-    height: 25px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
-    background: white;
+    background: url('../images/icon-slider.svg') no-repeat center / 80%;
+    background-color: hsl(174, 86%, 45%);
     border: 2px solid hsl(174, 86%, 45%);
     cursor: pointer;
+    box-shadow: hsla(174, 86%, 45%, 0.71) 0px 7px 29px 0px;
 }
 
 .cs-range::-moz-range-thumb {
@@ -93,7 +95,7 @@ body{
 #custom-switch.form-check-input {
     box-shadow: none !important;
     width: 40px !important;
-    height: 20px !important;
+    height: 25px !important;
     border: none !important;
     background-color: hsl(224, 65%, 95%) !important;
     transition: .5s !important;
@@ -112,19 +114,24 @@ body{
 #custom-switch.form-check-input::after {
     content: '';
     display: inline-block;
-    width: 17px; /* Adjust size as needed */
-    height: 17px; /* Adjust size as needed */
+    width: 21px; /* Adjust size as needed */
+    height: 21px; /* Adjust size as needed */
     background-color: white !important; /* Knob color */
     border-radius: 50%; /* Make it round */
     position: absolute;
-    top: 49%;
+    top: 49.5%;
     transform: translateY(-50%);
     transition: left 0.5s; /* Smooth transition */
-    left: 1px !important; /* Initial position */
+    left: 2px !important; /* Initial position */
 }
 
-/* Change knob position and color when checked */
 #custom-switch.form-check-input:checked::after {
-    left: calc(100% - 18px) !important; /* Adjust based on size to move to the right */
+    left: calc(100% - 22px) !important; /* Adjust based on size to move to the right */
     background-color: white !important; /* Knob color when checked */
+}
+
+@media (max-width: 991px) {
+    .cs-w {
+        width: 100% !important;
+    }
 }
